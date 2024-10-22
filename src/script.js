@@ -92,6 +92,10 @@ function checkWord() {
                 if(document.getElementById(`keyboard-${userWord[i]}`).style.backgroundColor !== '#588c4c')
                     document.getElementById(`keyboard-${userWord[i]}`).style.backgroundColor = '#c9b458';
             }
+            else{
+                document.getElementById(`box-${userTry + 1}-${i + 1}`).style.backgroundColor = '#a9a9a9';
+                document.getElementById(`keyboard-${userWord[i]}`).style.backgroundColor = '#a9a9a9';
+            }
         }
         else{
             document.getElementById(`box-${userTry + 1}-${i + 1}`).style.backgroundColor = '#588c4c';
