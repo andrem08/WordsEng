@@ -89,7 +89,8 @@ function checkWord() {
             correct = false;
             if (randomWord.includes(userWord[i])) {
                 document.getElementById(`box-${userTry + 1}-${i + 1}`).style.backgroundColor = '#c9b458';
-                document.getElementById(`keyboard-${userWord[i]}`).style.backgroundColor = '#c9b458';
+                if(document.getElementById(`keyboard-${userWord[i]}`).style.backgroundColor !== '#588c4c')
+                    document.getElementById(`keyboard-${userWord[i]}`).style.backgroundColor = '#c9b458';
             }
         }
         else{
